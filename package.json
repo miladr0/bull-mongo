@@ -1,0 +1,29 @@
+{
+  "name": "bull_mongodb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon -r dotenv-safe/config -r esm ./src/server.js",
+    "fixture": "node -r dotenv-safe/config -r esm ./src/fixtures/index.js",
+    "lint": "./node_modules/.bin/eslint ./src",
+    "pretty": "prettier --write '**/*.{js,json}' '!node_modules/**'",
+    "postpretty": "yarn lint --fix",
+    "docker:dev": "docker-compose -f docker-compose.yml up"
+  },
+  "dependencies": {
+    "bull": "^3.18.0",
+    "dotenv-safe": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "ioredis": "^4.17.3",
+    "mongoose": "^5.10.8"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.1.2"
+  }
+}
