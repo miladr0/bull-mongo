@@ -1,5 +1,5 @@
 # Message Queue using Bull, Redis, and MongoDB in Nodejs
-This repo contains the source code for this tutorial [medium.com](https://medium.com/).
+This repo contains the source code for this tutorial [Message Queue using Bull](https://medium.com/better-programming/message-queue-using-bull-redis-and-mongodb-in-node-js-d7dedaa426ea).
 
 
 ## Getting started
